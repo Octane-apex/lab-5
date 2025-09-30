@@ -1,0 +1,100 @@
+/* Creado por [David] - [30-09-2025] */
+
+/* === ESTILOS BÁSICOS === */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #b61b1b;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* === TARJETAS === */
+.tarjeta-destino {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 20px;
+    width: 80%;
+    position: relative;
+}
+
+.destacado {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.tarjeta-destino img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #b61b1b;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* === MENÚ DE NAVEGACIÓN === */
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #b61b1b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-navegacion a:hover {
+    color: #ffcc00;
+}
+
+/* Para que el contenido no quede escondido debajo de la barra fija */
+body {
+    padding-top: 60px;
+}
+
+/* === DISEÑO RESPONSIVE === */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    .tarjeta-destino {
+        width: 100%;
+    }
+    .menu-navegacion {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
